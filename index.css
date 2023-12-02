@@ -1,5 +1,46 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+.page-description {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-description h2 {
+    width: 75%;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 24px;
+}
+
+.perso-description {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: unset;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.perso-description img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.perso-description ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .perso-description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .perso-description img {
+        justify-self: end;
+    }
+    .perso-description ul {
+        justify-self: start;
+    }
 }
